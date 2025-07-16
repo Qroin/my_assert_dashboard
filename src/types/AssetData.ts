@@ -1,6 +1,6 @@
 export interface AssetData {
   투자자: string;
-  계좌명: string;
+  // 계좌명: string;
   종목명: string;
   통화: string;
   연초날짜: string;

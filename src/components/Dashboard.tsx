@@ -3,6 +3,7 @@ import { AssetData } from '../types/AssetData';
 import { processAssetData, createTreemapData, createSunburstData, createPerformanceSunburstData } from '../utils/dataProcessor';
 import AssetSummary from './AssetSummary';
 import AssetTreemap from './AssetTreemap';
+import AssetTreemap_con from './AssetTreemap_con';
 import SunburstChart from './SunburstChart';
 import DataTable from './DataTable';
 import { ArrowLeft, User } from 'lucide-react';
@@ -67,7 +68,7 @@ const Dashboard: React.FC<DashboardProps> = ({ data, onBack }) => {
             title="현재 자산"
             description="각 종목의 현재 평가액을 비중에 따라 시각화한 트리맵입니다."
           />
-          <AssetTreemap
+          <AssetTreemap_con
             data={contributionTreemapData}
             title="투자 성과"
             description="각 종목이 자산 성장에 기여한 정도를 나타내는 트리맵입니다."

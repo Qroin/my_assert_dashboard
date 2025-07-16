@@ -52,7 +52,7 @@ const FileUpload: React.FC<FileUploadProps> = ({ onDataLoad }) => {
       {
         투자자: '철수',
         계좌명: '삼성증권',
-        종목명: '달바',
+        종목명: '현대자동차',
         통화: 'KRW',
         연초날짜: '2025-01-01',
         연말날짜: '2025-07-14',
@@ -166,7 +166,8 @@ const FileUpload: React.FC<FileUploadProps> = ({ onDataLoad }) => {
           <input
             ref={fileInputRef}
             type="file"
-            accept=".xlsx,.xls"
+            // accept=".xlsx,.xls"
+            accept=".xlsx,.xls,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
             onChange={handleFileUpload}
             className="hidden"
           />
